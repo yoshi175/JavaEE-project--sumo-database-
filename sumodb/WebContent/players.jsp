@@ -4,7 +4,7 @@
 
 <jsp:include page="header.jsp" />
 
-<body style="background: lightgrey;">
+<body>
 	
 	<div align="center">
 	
@@ -19,7 +19,7 @@
 	
 	<br/><br/>
 	
-	<table border="1">
+	<table class="list">
 		<tr>
 			<th>Name</th>
 			<th>Height</th>
@@ -53,11 +53,12 @@
 				<td>${tempPlayer.coachName}</td>
 				<td>${tempPlayer.clubName}</td>
 				<td>
-					<a href="${updatePlayer}">Update</a>
+					<a href="${updatePlayer}"><i class="fa fa-refresh"></i></a>
 					 | 
 					<a href="${deletePlayer}"
 						onclick="if (!(confirm('Delete ${tempPlayer.name}?'))) return false">
-						Delete</a>
+						<i class="fa fa-trash"></i>
+					</a>
 				</td>
 			</tr>
 		</c:forEach>

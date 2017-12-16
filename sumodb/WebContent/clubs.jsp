@@ -5,30 +5,28 @@
 <html>
 
 <jsp:include page="header.jsp" />
-
-<body style="background: lightgrey;">
-	
+<body>
 	<div align="center">
 	
 	
 	<form action="SearchClub" method="GET">
 		<input type="text" name="searchValue"/>
-		<input type="submit" value="<fmt:message key="label.search" />"/>
+		<input type="submit" value="Search"/>
 	</form>
 	
 	<br/>
 	
-	<input style="align: center;" type="button" value="<fmt:message key="label.createClub" />" onclick="window.location.href='addClub.jsp'; return false;" />
+	<input style="align: center;" type="button" value="Create club" onclick="window.location.href='addClub.jsp'; return false;" />
 	
 	<br/>
 	<br/>
 	
-	<table border="1">
+	<table class="list">
 		<tr>
-			<th><fmt:message key="label.name" /></th>
-			<th><fmt:message key="label.startingYear" /></th>
-			<th><fmt:message key="label.city" /></th>
-			<th><fmt:message key="label.updateDelete" /></th>
+			<th>Name</th>
+			<th>Starting year</th>
+			<th>City</th>
+			<th>Update/Delete</th>
 		</tr>
 		
 		<c:forEach var="tempClub" items="${ALL_CLUBS}"> 
@@ -47,11 +45,12 @@
 				<td>${tempClub.startingYear}</td>
 				<td>${tempClub.city}</td>
 				<td>
-					<a href="${updateClub}"><fmt:message key="label.update" /></a>
+					<a href="${updateClub}"><i class="fa fa-refresh"></i></a>
 					 | 
 					<a href="${deleteClub}"
 						onclick="if (!(confirm('Delete ${tempClub.name}?'))) return false">
-						<fmt:message key="label.delete" /></a>
+						<i class="fa fa-trash"></i>
+					</a>
 				</td>
 				
 			</tr>	

@@ -1,9 +1,45 @@
 @charset "ISO-8859-1";
 
 header {
-	background-color: rgb(255, 255, 153); margin-top: -22px;
+	background-color: rgb(255, 255, 153);
+	margin-top: 10px;
 }
 
 body {
-	
+	background-color: rgb(229, 255, 204);
+}
+
+.list{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    background-color: white;
+}
+
+.list td, .list th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.list tr:nth-child(even){background-color: rgb(235, 235, 235);}
+
+.list tr:hover {background-color: lightgrey;}
+
+.list th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    height: 40px;
+    text-align: center;
+}
+
+.addAndUpdateForm {
+	align: center;
+	border: solid black;
+	width: 270px;
+	padding: 10 px;
+	background-color: rgb(235, 235, 235);
+	margin: 0 auto;
 }

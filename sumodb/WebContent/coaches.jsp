@@ -3,7 +3,7 @@
 <html>
 
 <jsp:include page="header.jsp" />
-
+<body>
 
 	
 	<div align="center">
@@ -19,7 +19,7 @@
 	
 	<br/><br/>
 	
-	<table border="1">
+	<table class="list">
 		<tr>
 			<th>Name</th>
 			<th>Birht date</th>
@@ -53,11 +53,12 @@
 				<td>${tempCoach.retiredFromCompeting}</td>
 				<td>${tempCoach.clubName}</td>
 				<td>
-					<a href="${updateCoach}">Update</a>
+					<a href="${updateCoach}"><i class="fa fa-refresh"></i></a>
 					 | 
 					<a href="${deleteCoach}"
 						onclick="if (!(confirm('Delete ${tempCoach.name}?'))) return false">
-					Delete</a>
+						<i class="fa fa-trash"></i>
+					</a>
 				</td>
 			</tr>
 		</c:forEach>

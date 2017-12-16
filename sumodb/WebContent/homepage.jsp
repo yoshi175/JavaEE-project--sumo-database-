@@ -3,14 +3,12 @@
 <html>
 
 <jsp:include page="header.jsp" />
-
-<body style="background: white;">
-	
+<body>
 	<br/>
 	<div align="center">
 		<h1>Professional Sumo Wrestling Register</h1>
-	
-		<img alt="Sumo123" src="images/sumoDbHomepagePicture.jpg">
+		<img alt="Sumo" src="images/sumoDbHomepagePicture.jpg">
+		
 	</div>
 	
 </body>
