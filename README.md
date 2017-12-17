@@ -58,3 +58,7 @@ Follow the steps below to install the project on your computer.
 	10.3 Add the project to the server by highlight it on the left side of the window and click the "Add" button and then click finish.
 
 	10.4 Now it should be up and running. Go to your browser and type "localhost:8080/sumodb" and click enter. Have fun!
+
+_________________________________________________________________________________________________________________________________
+
+I projektet används JSP teknologin för det visuella med hjälp av CSS för styling, samt Javascript för att hantera validering från en användares inmatning från skrivfält. Hantering av kommunikationen mellan JSP webben och databasen sker av Servlets.
