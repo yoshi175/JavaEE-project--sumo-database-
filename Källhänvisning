@@ -1,0 +1,9 @@
+Den största källan av information redogör jag för nedan, annars har jag googlat runt lite överallt på webben för att hitta information.
+
+Information om JSP och Servlets så har jag kollat på luv2code kanalen på youtube delvis.
+
+Delen av validering av input fält tog jag information/hjälp från denna sida. Kopierade de tre olika biblioteken och följde instruktionerna för att kunna göra min egen validering av input fält.
+(http://javascript-coder.com/form-validation/jquery-form-validation-guide.phtml#rules_reference)
+
+Styling av tabellerna på min sida, så tog jag hjälp av denna sida (w3shools), kopierade nästan helt och hållet, men gjorde lite små modifieringar.
+(https://www.w3schools.com/css/css_table.asp)
