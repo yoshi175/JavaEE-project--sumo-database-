@@ -3,7 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sumo DB</title>
+<title>Sumo Database</title>
+
+<link type="text/css" rel="stylesheet" href="css/sumodb.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!--include jQuery -->
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
@@ -67,7 +72,8 @@
 	<br />
 	<div>
 		<h3 style="text-align: center;">Create coach</h3>
-		<form class="addAndUpdateForm" action="AddCoach" method="POST">
+		<form class="addAndUpdateForm" id="addCoachForm" action="AddCoach"
+			method="POST">
 
 			<table>
 				<tbody>

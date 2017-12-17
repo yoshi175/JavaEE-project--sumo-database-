@@ -3,7 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Insert title here</title>
+<title>Sumo Database</title>
+
+<link type="text/css" rel="stylesheet" href="css/sumodb.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!--include jQuery -->
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
@@ -20,38 +25,38 @@
 	type="text/javascript"></script>
 
 <script type="text/javascript">
-	
-		$(function(){
-			$('#addPlayerForm').validate({
-				rules:{
-					playerName:{
-						required:true
-					},
-					heightCm:{
-						required:true,
-						digits:true
-					},
-					weightKg:{
-						required:true,
-						digits:true
-					},
-					birthdate:{
-						required:true,
-						pattern:/([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/
-					},
-					nativeCity:{
-						required:true
-					}
-				},
-				messages:{
-					birthdate:{
-						pattern:"Invalid format. Please enter yyyy-mm-dd."
-					}
-				}
-			});
-		});
-	
-	</script>
+	$(function() {
+		$('#addPlayerForm')
+				.validate(
+						{
+							rules : {
+								playerName : {
+									required : true
+								},
+								heightCm : {
+									required : true,
+									digits : true
+								},
+								weightKg : {
+									required : true,
+									digits : true
+								},
+								birthdate : {
+									required : true,
+									pattern : /([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/
+								},
+								nativeCity : {
+									required : true
+								}
+							},
+							messages : {
+								birthdate : {
+									pattern : "Invalid format. Please enter yyyy-mm-dd."
+								}
+							}
+						});
+	});
+</script>
 </head>
 <body>
 
@@ -59,7 +64,8 @@
 
 	<div>
 		<h3 style="text-align: center;">Create player</h3>
-		<form class="addAndUpdateForm" action="AddPlayer" method="POST">
+		<form class="addAndUpdateForm" id="addPlayerForm" action="AddPlayer"
+			method="POST">
 
 			<table>
 				<tbody>

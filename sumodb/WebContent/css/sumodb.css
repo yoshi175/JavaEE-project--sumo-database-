@@ -38,8 +38,12 @@ body {
 .addAndUpdateForm {
 	align: center;
 	border: solid black;
-	width: 270px;
+	width: 400px;
 	padding: 10 px;
-	background-color: rgb(235, 235, 235);
+	background-color: red;
 	margin: 0 auto;
+}
+
+div {
+	background-color: green;
 }

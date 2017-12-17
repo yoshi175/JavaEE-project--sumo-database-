@@ -1,9 +1,3 @@
-
-<head>
-	<title>Sumo Database</title>
-	<link type="text/css" rel="stylesheet" href="css/sumodb.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 <header>
 		
 	<a href="homepage.jsp">
